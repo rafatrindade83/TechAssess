@@ -1,0 +1,46 @@
+POST /restapi/v2.1/accounts/12345678/envelopes/87654321/templates
+
+{
+    "emailSubject": "DocuSign combined envelope JSON",
+    "documentId": "JSON1"
+    "templateId":"779abcd5-f4c1-489f-9016-577be2f1ef70",
+    "documentId": "JSON2"
+    "templateId":"8a38b4dd-0c8c-4f12-98bd-797a9ee4ce2e",
+    "templateRoles": [
+        {
+  "recipients": {
+    "signers": [
+      {
+        "email": "johndoe@test.test",
+        "name": "John Doe",
+        "recipientId": 1,
+        "tabs": {
+          "signHereTabs": [
+            {
+              "xPosition": "100",
+              "yPosition": "100",
+              "documentId": "2",
+              "pageNumber": "1"
+            }
+          ]
+        }
+      },
+      {
+        "email": "janedoe@test.test",
+        "name": "Jane Doe",
+        "recipientId": 2, 
+        "tabs": {
+          "signHereTabs": [
+            {
+              "xPosition": "-95",
+              "yPosition": "48",
+              "documentId": "1", 
+              "pagenumber": "2"
+            }]
+        }
+      }
+    ]
+  },
+    ],
+    "status": "sent"
+}
