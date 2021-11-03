@@ -6,10 +6,10 @@ POST - https://demo.docusign.net/restapi/v2/accounts/12345678/envelopes
   "recipients": {
     "signers": [
       {
+        "routingOrder":1,
         "email": "theflash@jakedstest.xyz",
         "name": "Barry Allen",
         "recipientId": 1,
-        "accessCode": "98371",
         "tabs": {
           "signHereTabs": [
             {
@@ -22,9 +22,20 @@ POST - https://demo.docusign.net/restapi/v2/accounts/12345678/envelopes
         }
       },
       {
+        "routingOrder":1,
         "email": "iamthebatman@jakedstest.xyz",
         "name": "Bruce Wayne",
-        "recipientId": 2
+        "recipientId": 2,
+        "tabs": {
+          "signHereTabs": [
+            {
+              "xPosition": "200",
+              "yPosition": "200",
+              "documentId": "1",
+              "pageNumber": "1"
+            }
+          ]
+        }
       }
     ]
   },
